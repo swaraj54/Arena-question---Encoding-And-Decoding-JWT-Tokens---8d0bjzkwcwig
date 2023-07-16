@@ -4,7 +4,7 @@ const { encodePayload, decodeToken } = require("../controllers/tokenControllers"
 
 const router = express.Router();
 
-router.get("/encode", encodePayload);
-router.get('/decode', decodeToken)
+router.post("/encode", encodePayload);
+router.post('/decode', decodeToken)
 
 module.exports = router;
